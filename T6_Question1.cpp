@@ -22,7 +22,7 @@ public:
         delete[] m_power_array;
     }
 
-    // i. getNumElements - counts lines in file
+
     int getNumElements(string pFile) {
         int count = 0;
         float d1, d2;
@@ -33,7 +33,7 @@ public:
         return count;
     }
 
-    // ii. LoadData - reads file into array and computes power
+    
     void LoadData(string pFile, int numElements) {
         m_numElements = numElements;
         m_power_array = new SPowerData[numElements];
@@ -51,7 +51,7 @@ public:
         m_File.close();
     }
 
-    // iii. FindMinMaxPower - finds min and max power in array
+    
     void FindMinMaxPower(float &outMinPower, float &outMaxPower) {
         if (m_numElements == 0) return;
 
